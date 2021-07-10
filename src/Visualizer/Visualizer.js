@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import Node from './Node/Node';
 import {dijkstra, getNodesInShortestPathOrder} from '../algo/dijkstra';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Card,Button, Navbar ,Nav,Form,FormControl} from 'react-bootstrap'
 import './Visualizer.css';
+import Example from '../components/popup';
 
 let a = Math.floor(Math.random() * (5 - 1) + 5);
 let b = Math.floor(Math.random() * (10 - 1) + 10);
@@ -17,6 +19,7 @@ const FINISH_NODE_ROW = c;
 const FINISH_NODE_COL = d;
 
 export default class Visualizer extends Component {
+
   constructor() {
     super();
     this.state = {
@@ -85,9 +88,30 @@ export default class Visualizer extends Component {
 
     return (
       <>
-        <button onClick={() => this.visualizeDijkstra()}>
-          Visualize Dijkstra's Algorithm
-        </button>
+{/* navbar starts  */}
+    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar.Brand  className=" " href="#home">Visualizer</Navbar.Brand>
+    <Nav className="mr-auto">
+      <Nav.Link href="#footer">How to use!!</Nav.Link>
+
+      <Nav.Link href=" onClick={() => window.location.reload(false)">
+      Randomly Place Nodes 
+      </Nav.Link>
+    
+    </Nav>
+
+    <Form inline>
+    <div className='mr-3'>
+    <Button  onClick={() => this.visualizeDijkstra()}> Visualize Dijkstra's Algorithm </Button>
+    </div>
+    <Button variant="outline-info" onClick={() => window.location.reload(false)}>  Clear BOX</Button>
+    </Form>  
+  </Navbar>
+{/* navbar ends */}
+
+
+
+{/* grid section main */}
         <div className="grid">
           {grid.map((row, rowIdx) => {
             return (
@@ -113,10 +137,44 @@ export default class Visualizer extends Component {
               </div>
             );
           })}
+
         </div>
+        {/* grid section ends */}
+
+{/* footer */}
+<footer>
+ {/* how to use section */}
+ <Card>
+  <Card.Header  className="blockquote mb-0" >How to use!!! </Card.Header>
+
+  <Card.Body>
+    <blockquote >
+      <p>
+        {' '}
+         Generate Walls - Click on grid to generate  walls .
+         <br></br>
+         Click on Visualize to generate shortes path.
+
+
+        {' '}
+      </p>
+      <Example></Example>
+      <footer id="footer">
+        Made with 💖 by <a href="https://github.com/avinesh2101">Avinesh Pandey</a>.
+      </footer>
+      
+    </blockquote>
+  </Card.Body>
+
+</Card>
+{/* ends */}
+</footer>
+{/* footer ends */}
+
       </>
     );
   }
+
 }
 
 const getInitialGrid = () => {
