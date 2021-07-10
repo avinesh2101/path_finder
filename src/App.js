@@ -4,7 +4,7 @@ import Visualizer from './Visualizer/Visualizer'
 function App() {
   return (
     <div className="App">
-        <Visualizer></Visualizer>
+       <div><Visualizer></Visualizer></div> 
     </div>
   );
 }
