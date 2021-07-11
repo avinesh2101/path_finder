@@ -5,6 +5,13 @@ This application visualizes Dijkstra Algorithm in action.The algorithms on this 
 #### The sole purpose of this application is to help student easily understand dijkstra algorithm by visualizing it in their brains.
 
 
+### How to modify this app ?
+Just clone it and write 
+</br>
+npm i
+</br> 
+in yout terminal and after that if you want to add new algorithm visualization write the algortihm in algo directory and add its button or make a dropdown in navbar . 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -63,7 +70,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 ### Making a Progressive Web App
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
+### Idea inpiration 
+I got the inpiration to make this app from clementmi hailescu.
 ### Advanced Configuration
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
