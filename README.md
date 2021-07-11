@@ -1,3 +1,10 @@
+![Alt Text](https://github.com/avinesh2101/path_finder/blob/master/public/Demo_final.gif)
+
+## What is this application all about💻
+This application visualizes Dijkstra Algorithm in action.The algorithms on this application are adapted for a 2D grid, where 90 degree turns have a "cost" of 1 and movements from a node to another have a "cost" of 1.Purpose of this application -
+#### The sole purpose of this application is to help student easily understand dijkstra algorithm by visualizing it in their brains.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
