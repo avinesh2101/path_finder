@@ -24,9 +24,9 @@ const Example = () => {
 
             <h1>What the hell is Dijkstra ??🙄</h1>
             <p>Dijkstra's algorithm is used for finding the shortest paths between nodes in a 
-            graph, which may represent,road networks and have many application like in <i>IP routing,Social Networking Applications,Digital Mapping Services in Google Maps.....etc etc.</i>
-            <b>It always gurantes shortes path between two node.</b>
-            for its implementation and use in problem solving with refer my code  <a href="https://github.com/avinesh2101/Graph-and-related-stuff.git">(fyi: my code is shitty go read some good articles🥱)</a></p>
+            graph, which can represent road networks,flight networks and have many application like in <i>IP routing,Social Networking Applications,Digital Mapping Services in Google Maps.....etc etc.</i>
+            <b>Dijkstra's Algorithm is guaranteed to find a shortest path from the starting point to the goal, as long as none of the edges have a negative cost</b>
+            for its implementation and use in problem solving with refer my code  <a href="https://github.com/avinesh2101/Graph-and-related-stuff.git">(go read some good articles and books🥱)</a></p>
             
             <br></br>
             <p>
@@ -35,9 +35,9 @@ const Example = () => {
  <b> Dijkstra Algorithm </b>in action.The algorithms on this application are adapted for a 2D grid, 
 where 90 degree turns have a "cost" of 1 and movements from a node to 
 another have a "cost" of 1.
-<b>Purpose of this application -</b> The sole purpose of this application is to s
+<b>Purpose of this application -</b> The sole purpose of this application is to 
  {/* showcase my development skills */}
-   help student easily understand dijkstra algorithm by visualizing it in their brains.
+   help student easily understand dijkstra algorithm by watching its working and some real life examples.
             </p>
 
             <br></br>
