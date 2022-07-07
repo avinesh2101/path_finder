@@ -1,5 +1,5 @@
 {
-  "name": "pathfinder_visualizer",
+  "name": "shortest_pathfinder_visualizer",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
